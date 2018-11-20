@@ -1,15 +1,24 @@
 package com.lovejobs.springboot;
 
+import com.lovejobs.springboot.event.OrderEvent;
+import com.lovejobs.springboot.event.UserEvent;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = EventApplication.class)
 public class TestEventApplication {
 
+    @Autowired
+    ApplicationContext context;
+
     @Test
     public void test(){
+        context.publishEvent(new UserEvent(this,"这个是一个用户"));
+        context.publishEvent(new OrderEvent(this,"这是一个订单"));
     }
 }
