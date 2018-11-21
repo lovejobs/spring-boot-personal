@@ -1,0 +1,31 @@
+package com.lovejobs.springboot.rules
+import com.lovejobs.springboot.drools.model.PayOrder
+import com.lovejobs.springboot.drools.enums.PayOrderStatus
+import com.alibaba.fastjson.JSONObject
+dialect  "mvel"
+
+
+rule "order payChannelCode"
+    dialect "mvel"
+    when
+        payOrder : PayOrder(payChannelCode=="YESBANK")
+    then
+        payOrder.setAccountId("1");
+end
+
+rule "order paymentType"
+    dialect "mvel"
+    when
+        payOrder : PayOrder(paymentType=="P2P", transactionType == "PAY")
+    then
+        payOrder.setAccountId("2");
+end
+
+rule "order status code"
+    dialect "mvel"
+    when
+        payOrder : PayOrder(status==PayOrderStatus.PAYORDER_STATUS_CLOSED)
+    then
+        System.out.println("order:"+JSONObject.toJSONString(payOrder));
+end
+

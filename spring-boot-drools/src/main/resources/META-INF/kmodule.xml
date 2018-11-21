@@ -1,5 +1,8 @@
 <kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
-    <kbase name="rules" packages="rules">
+    <kbase name="rules" packages="com.lovejobs.springboot.rules">
         <ksession name="ksession-rules"/>
+    </kbase>
+    <kbase name="order-rules" packages="com.lovejobs.springboot.rules">
+        <ksession name="order-ksession-rules"/>
     </kbase>
 </kmodule>
