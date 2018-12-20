@@ -1,0 +1,44 @@
+server:
+  port: 8091
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: spring-boot-config-client
+management:
+  security:
+    enabled: false
+
+
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+#      uri: http://localhost:8888
+      profile: dev
+      name: spring-boot-config-client
+      label: master
+      discovery:
+        enabled: true
+        service-id: spring-boot-config-server
+
+---
+spring:
+  profiles: pro
+  cloud:
+    config:
+#      uri: http://localhost:8888
+      profile: pro
+      name: spring-boot-config-client
+      label: master
+      discovery:
+        enabled: true
+        service-id: spring-boot-config-server
+---
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.11.85:8761/eureka/

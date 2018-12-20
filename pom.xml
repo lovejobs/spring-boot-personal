@@ -20,6 +20,7 @@
         <module>spring-boot-with-eureka</module>
         <module>spring-boot-schedule</module>
         <module>spring-boot-config-server</module>
+        <module>spring-boot-config-client</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>
