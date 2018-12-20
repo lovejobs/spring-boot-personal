@@ -1,0 +1,50 @@
+server:
+  port: 9090
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  application:
+    name: spring-boot-datasource
+  datasource:
+    first:
+      driver-class-name: com.mysql.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+      url:
+      username:
+      password:
+      druid:
+        initial-size: 8
+        min-idle: 5
+        max-active: 150
+        query-timeout: 6000
+        transaction-query-timeout: 6000
+        remove-abandoned-timeout: 18000
+      second:
+        driver-class-name: com.mysql.jdbc.Driver
+        type: com.alibaba.druid.pool.DruidDataSource
+        url:
+        username:
+        password:
+        druid:
+          initial-size: 8
+          min-idle: 5
+          max-active: 150
+          query-timeout: 6000
+          transaction-query-timeout: 6000
+          remove-abandoned-timeout: 18000
+      third:
+        driver-class-name: com.mysql.jdbc.Driver
+        type: com.alibaba.druid.pool.DruidDataSource
+        url:
+        username:
+        password:
+        druid:
+          initial-size: 8
+          min-idle: 5
+          max-active: 150
+          query-timeout: 6000
+          transaction-query-timeout: 6000
+          remove-abandoned-timeout: 18000
