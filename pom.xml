@@ -9,6 +9,8 @@
         <module>spring-boot-event</module>
         <module>spring-boot-drools</module>
         <module>spring-boot-delayqueue</module>
+        <module>spring-boot-datasource</module>
+        <module>spring-boot-aws-sqs</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>
