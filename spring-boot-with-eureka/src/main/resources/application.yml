@@ -1,0 +1,14 @@
+#java -jar weshow-account-1.0.2.jar --spring.profiles.active=alpha --server.port=8000
+server:
+  port: 9091
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://fengxin:fengxin@47.74.183.78:8761/eureka/
+
+spring:
+  application:
+    name: spring-boot-with-erueka

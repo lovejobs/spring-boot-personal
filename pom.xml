@@ -17,6 +17,7 @@
         <module>spring-boot-rabbitmq</module>
         <module>spring-boot-redis</module>
         <module>spring-eureka</module>
+        <module>spring-boot-with-eureka</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>
