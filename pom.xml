@@ -11,6 +11,7 @@
         <module>spring-boot-delayqueue</module>
         <module>spring-boot-datasource</module>
         <module>spring-boot-aws-sqs</module>
+        <module>spring-boot-api-getway</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>

@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: spring-boot-api-getway
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.11.85:8761/eureka/
+
+zuul:
+  routes:
+    account:
+      path: /api-spring-boot-with-eureka/**
+      url: spring-boot-with-eureka
+    invite:
+      path: /api-invite/**
+      url: weshow-invite
+    answer:
+      path: /api-answer/**
+      url: weshow-answer
