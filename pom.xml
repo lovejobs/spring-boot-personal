@@ -15,6 +15,7 @@
         <module>spring-boot-https</module>
         <module>spring-boot-executors</module>
         <module>spring-boot-rabbitmq</module>
+        <module>spring-boot-redis</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>
