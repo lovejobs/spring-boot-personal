@@ -1,0 +1,11 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: spring-boot-aws-sqs
+
+
+tradepay:
+  test-queue:
+    url: https://sqs.ap-south-1.amazonaws.com/848318613114/test-queue-dev

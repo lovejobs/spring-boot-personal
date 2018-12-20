@@ -12,6 +12,7 @@
         <module>spring-boot-datasource</module>
         <module>spring-boot-aws-sqs</module>
         <module>spring-boot-api-getway</module>
+        <module>spring-boot-https</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>
