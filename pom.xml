@@ -13,6 +13,7 @@
         <module>spring-boot-aws-sqs</module>
         <module>spring-boot-api-getway</module>
         <module>spring-boot-https</module>
+        <module>spring-boot-executors</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>
