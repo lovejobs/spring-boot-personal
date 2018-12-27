@@ -6,6 +6,6 @@ spring:
     name: spring-boot-mail
   mail:
     host: smtp.exmail.qq.com
-    password:
-    username:
+    password: rHgh4Ep2AxmJPK9v
+    username: fengxin@ushareit.com
 
