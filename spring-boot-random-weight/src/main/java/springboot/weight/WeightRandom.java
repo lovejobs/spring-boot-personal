@@ -1,5 +1,7 @@
 package springboot.weight;
 
+import org.apache.commons.lang3.RandomUtils;
+
 import java.util.*;
 
 public class WeightRandom {
@@ -11,26 +13,45 @@ public class WeightRandom {
 
     public static void main(String[] args) {
         Random ran = new Random();
-        String str=getWanfei(ran.nextInt(100));
-        Map<String,Object> map = new HashMap<String,Object>();
-        map.put("key","A");
-        map.put("value","0");
-        Map<String,Object> map1 = new HashMap<String,Object>();
-        map1.put("key","B");
-        map1.put("value","1");
-        Map<String,Object> map2 = new HashMap<String,Object>();
-        map2.put("key","C");
-        map2.put("value","20");
-        Map<String,Object> map3 = new HashMap<String,Object>();
-        map3.put("key","D");
-        map3.put("value","60");
+        Map<String,Object> cashback_map_1 = new HashMap<String,Object>();
+        cashback_map_1.put("rewardType","CASHBACK");
+        cashback_map_1.put("weight","35");
+        cashback_map_1.put("rewardRangeStart","3");
+        cashback_map_1.put("rewardRangeEnd","4");
+        Map<String,Object> cashback_map_2 = new HashMap<String,Object>();
+        cashback_map_2.put("rewardType","CASHBACK");
+        cashback_map_2.put("weight","5");
+        cashback_map_2.put("rewardRangeStart","10");
+        cashback_map_2.put("rewardRangeEnd","12");
+        Map<String,Object> cashback_map_3 = new HashMap<String,Object>();
+        cashback_map_3.put("rewardType","CASHBACK");
+        cashback_map_3.put("weight","1");
+        cashback_map_3.put("rewardRangeStart","50");
+        cashback_map_3.put("rewardRangeEnd","50");
+        Map<String,Object> coins_map_1 = new HashMap<String,Object>();
+        coins_map_1.put("rewardType","COINS");
+        coins_map_1.put("weight","4");
+        coins_map_1.put("rewardRangeStart","100");
+        coins_map_1.put("rewardRangeEnd","300");
+        Map<String,Object> coins_map_2 = new HashMap<String,Object>();
+        coins_map_2.put("rewardType","COINS");
+        coins_map_2.put("weight","30");
+        coins_map_2.put("rewardRangeStart","300");
+        coins_map_2.put("rewardRangeEnd","500");
+        Map<String,Object> coins_map_3 = new HashMap<String,Object>();
+        coins_map_3.put("rewardType","COINS");
+        coins_map_3.put("rewardWeight","25");
+        coins_map_3.put("rewardRangeStart","500");
+        coins_map_3.put("rewardRangeEnd","1000");
         List<Map<String,Object>> list = new ArrayList<Map<String,Object>>();
-        list.add(map2);
-        list.add(map);
-        list.add(map1);
-        list.add(map3);
+        list.add(coins_map_1);
+        list.add(coins_map_2);
+        list.add(coins_map_3);
+        list.add(cashback_map_1);
+        list.add(cashback_map_2);
+        list.add(cashback_map_3);
         for (int i =0;i<=1000;i++) {
-            getWeight(list,ran.nextInt(100)+1);
+            getWeight(list,ran.nextInt(99)+1);
             System.out.println(acount+"__"+bcount+"__"+ccount+"__"+dcount);
         }
 
