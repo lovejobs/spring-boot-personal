@@ -15,7 +15,6 @@
         <module>spring-boot-https</module>
         <module>spring-boot-executors</module>
         <module>spring-boot-rabbitmq</module>
-        <module>spring-boot-redis</module>
         <module>spring-eureka</module>
         <module>spring-boot-with-eureka</module>
         <module>spring-boot-schedule</module>
