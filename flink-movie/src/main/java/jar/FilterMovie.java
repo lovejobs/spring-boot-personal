@@ -6,6 +6,7 @@ import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.tuple.Tuple;
 import org.apache.flink.api.java.tuple.Tuple3;
+import org.apache.flink.streaming.api.functions.sink.RichSinkFunction;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -36,7 +37,14 @@ public class FilterMovie {
         });
         System.out.println(filteredMovies.count());
 
-        filteredMovies.writeAsText("/Users/fengxin/work/studyPlace/spring-boot-personal/flink-movie/movie-filter.text");
+        DataSet<String> moveName = lines.map(new MapFunction<Tuple3<Long, String, String>, String>() {
+            @Override
+            public String map(Tuple3<Long, String, String> longStringStringTuple3) throws Exception {
+                return longStringStringTuple3.f1;
+            }
+        });
+
+        moveName.writeAsText("/Users/fengxin/work/studyPlace/spring-boot-personal/flink-movie/movie-name-filter.text");
 
         env.execute();
     }

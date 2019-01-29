@@ -88,7 +88,7 @@
               </filters>
               <transformers>
                 <transformer>
-                  <mainClass>jar.WikipediaAnalysis</mainClass>
+                  <mainClass>jar.SocketWindowWordCount</mainClass>
                 </transformer>
               </transformers>
             </configuration>

@@ -154,7 +154,7 @@ under the License.
 							</filters>
 							<transformers>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>jar.WikipediaAnalysis</mainClass>
+									<mainClass>jar.SocketWindowWordCount</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
