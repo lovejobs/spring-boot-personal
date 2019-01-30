@@ -37,6 +37,15 @@ public class WikipediaAnalysis {
                     }
                 });
 
+
+//        DataStream<Tuple2<String, Long>> result_1 = keyedEdits
+//                .timeWindow(Time.seconds(5))
+//                .fold(new Tuple2<>("", 0L), (Tuple2<String, Long> acc, WikipediaEditEvent event)->{
+//                    acc.f0 = event.getUser();
+//                    acc.f1 += event.getByteDiff();
+//                    return acc;
+//                });
+
         result.print();
         see.execute();
     }

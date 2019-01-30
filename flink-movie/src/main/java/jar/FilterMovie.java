@@ -35,7 +35,7 @@ public class FilterMovie {
                 return movie.getGenres().contains("Action");
             }
         });
-        System.out.println(filteredMovies.count());
+        //System.out.println(filteredMovies.count());
 
         DataSet<String> moveName = lines.map(new MapFunction<Tuple3<Long, String, String>, String>() {
             @Override
