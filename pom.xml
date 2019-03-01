@@ -20,7 +20,8 @@
         <module>spring-boot-schedule</module>
         <module>spring-boot-config-server</module>
         <module>spring-boot-config-client</module>
-  </modules>
+        <module>spring-boot-redis-msg</module>
+    </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>
 
