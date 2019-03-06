@@ -16,7 +16,7 @@ Welcome<br/>
 
     //判断当前浏览器是否支持WebSocket
     if('WebSocket' in window){
-        websocket = new WebSocket("ws://cricket-socket-dev.wshareit.com/websocket/cricket/fadfasfdasfwefwefas/en");
+        websocket = new WebSocket("wss://cricket-socket-dev.wshareit.com/websocket/cricket/fadfasfdasfwefwefas/en");
     }
     else{
         alert('Not support websocket')
@@ -29,7 +29,7 @@ Welcome<br/>
 
     //连接成功建立的回调方法
     websocket.onopen = function(event){
-        heartCheck.reset().start();//心跳
+        //heartCheck.reset().start();//心跳
         setMessageInnerHTML("open");
     }
 
