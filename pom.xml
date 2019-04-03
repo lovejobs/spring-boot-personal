@@ -22,6 +22,8 @@
         <module>spring-boot-config-client</module>
         <module>spring-boot-redis-msg</module>
         <module>spring-boot-binarySearch</module>
+        <module>server-send-event</module>
+        <module>spring-boot-echarts</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>
