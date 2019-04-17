@@ -24,6 +24,7 @@
         <module>spring-boot-binarySearch</module>
         <module>server-send-event</module>
         <module>spring-boot-echarts</module>
+        <module>spring-boot-security</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>
