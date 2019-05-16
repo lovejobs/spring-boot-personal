@@ -25,6 +25,9 @@
         <module>server-send-event</module>
         <module>spring-boot-echarts</module>
         <module>spring-boot-security</module>
+        <module>spring-boot-dubbo-server</module>
+        <module>spring-boot-dubbo-client</module>
+        <module>spring-boot-dubbo-api</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>
