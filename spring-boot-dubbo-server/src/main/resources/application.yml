@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: spring-boot-dubbo-server
+
+
+dubbo:
+  scan:
+    base-packages: com.lovejobs.service
+  protocol:
+    name: dubbo
+    port: 8082
+  registry:
+    address: zookeeper://localhost:2181
