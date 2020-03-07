@@ -1,6 +1,7 @@
 package com.lovejobs.config;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 
 import javax.annotation.PostConstruct;
 import java.util.concurrent.Executors;
@@ -21,7 +22,7 @@ public class ScheduledExecutorConfig {
             } catch (Exception e) {
                 //warn
             }
-        }, 10, 10, TimeUnit.MILLISECONDS);
+        }, 10, 10, TimeUnit.SECONDS);
     }
 
 
