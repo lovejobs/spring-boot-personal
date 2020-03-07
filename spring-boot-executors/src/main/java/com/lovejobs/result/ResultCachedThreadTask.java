@@ -13,6 +13,9 @@ public class ResultCachedThreadTask implements Callable {
 
     @Override
     public String call() throws Exception {
+        if(name .equals("2")){
+            Thread.sleep(10000);
+        }
         return this.name;
     }
 }
