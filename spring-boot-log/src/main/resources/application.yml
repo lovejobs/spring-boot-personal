@@ -3,4 +3,6 @@ server:
 spring:
   application:
     name: spring-boot-log
-debug: true
+  profiles:
+    active: dev
+debug: false
