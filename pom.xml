@@ -30,6 +30,7 @@
         <module>spring-boot-dubbo-api</module>
         <module>spring-boot-jdk8</module>
         <module>spring-boot-log</module>
+        <module>spring-boot-netty</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>
