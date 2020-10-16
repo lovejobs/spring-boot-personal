@@ -10,6 +10,7 @@ public class Base {
     static {
         System.out.println("基类静态代码块，s="+s);
         s=1;
+        System.out.println("基类静态代码块，s="+s);
     }
     {
         System.out.println("基类实例代码块，a="+a);
