@@ -9,7 +9,6 @@
         <module>spring-boot-event</module>
         <module>spring-boot-drools</module>
         <module>spring-boot-delayqueue</module>
-        <module>spring-boot-datasource</module>
         <module>spring-boot-aws-sqs</module>
         <module>spring-boot-api-getway</module>
         <module>spring-boot-https</module>
@@ -38,7 +37,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.8.RELEASE</version>
+        <version>2.3.2.RELEASE</version>
         <relativePath/>
     </parent>
 

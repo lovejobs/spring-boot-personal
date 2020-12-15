@@ -3,7 +3,6 @@ package com.lovejobs.fthread;
 import lombok.SneakyThrows;
 
 import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.Queue;
 
 /**
