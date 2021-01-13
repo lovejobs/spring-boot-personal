@@ -27,4 +27,10 @@ import java.util.List;
         System.out.println(JSONObject.toJSONString(o));
     }
 
+    @Test void contextLoads23() {
+        AuthTokenRequest authTokenRequest = new AuthTokenRequest();
+        AuthTokenResponse o = authTokenService.getAuthTokenV2(authTokenRequest.getStr());
+        System.out.println(JSONObject.toJSONString(o));
+    }
+
 }

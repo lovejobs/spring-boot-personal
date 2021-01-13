@@ -1,4 +1,4 @@
-package com.lovejobs.springbootfeigntest;
+package com.lovejobs.springbootfeign.model;
 
 import lombok.Data;
 

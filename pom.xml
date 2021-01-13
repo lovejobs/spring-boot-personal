@@ -6,30 +6,10 @@
     <artifactId>spring-boot-personal</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>spring-boot-event</module>
-        <module>spring-boot-drools</module>
-        <module>spring-boot-delayqueue</module>
-        <module>spring-boot-aws-sqs</module>
-        <module>spring-boot-api-getway</module>
-        <module>spring-boot-https</module>
-        <module>spring-boot-executors</module>
-        <module>spring-boot-rabbitmq</module>
-        <module>spring-eureka</module>
-        <module>spring-boot-with-eureka</module>
-        <module>spring-boot-schedule</module>
-        <module>spring-boot-config-server</module>
-        <module>spring-boot-config-client</module>
-        <module>spring-boot-redis-msg</module>
-        <module>spring-boot-binarySearch</module>
-        <module>server-send-event</module>
-        <module>spring-boot-echarts</module>
-        <module>spring-boot-security</module>
-        <module>spring-boot-dubbo-server</module>
-        <module>spring-boot-dubbo-client</module>
-        <module>spring-boot-dubbo-api</module>
-        <module>spring-boot-jdk8</module>
-        <module>spring-boot-log</module>
-        <module>spring-boot-netty</module>
+        <module>spring-boot-feign-client</module>
+        <module>spring-boot-feign-sdk</module>
+        <module>spring-boot-feign-model</module>
+        <module>spring-boot-feign-server</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>

@@ -14,11 +14,14 @@ import org.springframework.web.bind.annotation.*;
 import javax.print.attribute.standard.Media;
 
 
-@FeignClient(url = "https://*****/dex", name = "AuthTokenService",configuration = AuthTokenService.Configuration.class)
+@FeignClient(url = "https://sentry.ushareit.me/dex", name = "AuthTokenService",configuration = AuthTokenService.Configuration.class)
 public interface AuthTokenService {
 
     @PostMapping(value="/token", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
     AuthTokenResponse getAuthToken(@RequestBody AuthTokenRequest authTokenRequest);
+
+    @PostMapping(value="/token", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+    AuthTokenResponse getAuthTokenV2(@RequestBody String s);
 
     class Configuration {
         @Bean
