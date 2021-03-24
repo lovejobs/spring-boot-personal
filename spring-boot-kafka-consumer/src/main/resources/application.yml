@@ -1,0 +1,13 @@
+server:
+  port: 8442
+
+spring:
+  application:
+    name: spring-boot-kafka-consumer
+  kafka:
+    bootstrap-servers: localhost:90921
+    consumer:
+      group-id: com.lovejobs.kafka.consumer.1
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      topic: com.lovejobs.kafka
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer

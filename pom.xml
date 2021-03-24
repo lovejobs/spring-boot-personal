@@ -6,10 +6,9 @@
     <artifactId>spring-boot-personal</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>spring-boot-feign-client</module>
-        <module>spring-boot-feign-sdk</module>
-        <module>spring-boot-feign-model</module>
-        <module>spring-boot-feign-server</module>
+        <module>spring-boot-jdk8</module>
+        <module>spring-boot-kafka-producer</module>
+        <module>spring-boot-kafka-consumer</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>
