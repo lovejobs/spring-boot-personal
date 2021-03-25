@@ -14,14 +14,11 @@ public class QuickSort {
             while (i<j&&arr[j]>=current){
                 j--;
             }
+            arr[i] = arr[j];
             while (i<j&&arr[i]<=current){
                 i++;
             }
-            if(i<j){
-                int tmp = arr[j];
-                arr[j] = arr[i];
-                arr[i] = tmp;
-            }
+            arr[j] = arr[i];
         }
         arr[i] = current;
         sort(arr,start,i-1);
