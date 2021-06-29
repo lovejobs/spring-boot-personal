@@ -1,17 +1,17 @@
 package com.lovejobs.interview.sort_algorithm;
 
-public class InsertionSort {
+public class InsertionSortTest {
 
     public static void sort(int[] arr){
-        int size = arr.length;
-        for (int i = 1; i < size; i++) {
+        int length = arr.length;
+        for (int i = 1; i < length; i++) {
             int current = arr[i];
-            int pre_index = i-1;
-            while (pre_index>=0&&arr[pre_index]>current){
-                arr[pre_index+1] = arr[pre_index];
-                pre_index--;
+            int j = i-1;
+            while (j>=0&&arr[j]>current){
+                arr[j+1] = arr[j];
+                j--;
             }
-            arr[pre_index + 1] = current;
+            arr[j+1]=current;
         }
     }
 

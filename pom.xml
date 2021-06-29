@@ -9,6 +9,10 @@
         <module>spring-boot-jdk8</module>
         <module>spring-boot-kafka-producer</module>
         <module>spring-boot-kafka-consumer</module>
+        <module>spring-boot-interview-jar</module>
+        <module>spring-boot-interview</module>
+        <module>spring-boot-archaius-jar</module>
+        <module>spring-boot-archaius</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>
@@ -28,7 +32,6 @@
         <fastjson.version>1.2.28</fastjson.version>
         <commons-lang.version>2.6</commons-lang.version>
         <commons-lang3.version>3.5</commons-lang3.version>
-
     </properties>
 
     <dependencyManagement>
