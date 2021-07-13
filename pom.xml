@@ -6,13 +6,7 @@
     <artifactId>spring-boot-personal</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>spring-boot-jdk8</module>
-        <module>spring-boot-kafka-producer</module>
-        <module>spring-boot-kafka-consumer</module>
-        <module>spring-boot-interview-jar</module>
-        <module>spring-boot-interview</module>
-        <module>spring-boot-archaius-jar</module>
-        <module>spring-boot-archaius</module>
+        <module>spring-boot-security</module>
     </modules>
     <packaging>pom</packaging>
     <name>spring-boot-personal</name>

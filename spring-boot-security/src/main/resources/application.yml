@@ -3,4 +3,11 @@ server:
 spring:
   application:
     name: spring-boot-security
+  datasource:
+    url: jdbc:mysql://localhost:3306/abtest?characterEncoding=utf8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    jpa:
+      show-sql: true
 debug: true
